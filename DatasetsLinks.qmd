@@ -1,0 +1,13 @@
+# Links to important data sets
+
+Save to "Datasets" folder along with unzipped csv food inspection data.
+
+- Food Inspections: https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/about_data
+
+- Census Socioeconomics: https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2/about_data
+
+- Crimes 2001-Present: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/about_data
+
+- Boundaries GIS: https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6
+
+- ACS data by Community: https://data.cityofchicago.org/Community-Economic-Development/ACS-5-Year-Data-by-Community-Area/t68z-cikk/data_preview

@@ -1,0 +1,5 @@
+model,accuracy,auc_roc
+logreg,0.784,0.8739
+svm,0.7818,0.8732
+mlp,0.8192,0.9016
+xgb,0.8318,0.9139

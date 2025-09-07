@@ -1,0 +1,286 @@
+(base) PS C:\Users\cjmij\DSAN\DSAN_5300\project-group-50> python .\cj-scripts\food_inspection_models.py --data ./Datasets/Encoded_Food_Inspections.csv --model all --epochs 15 --batch-size 8192 --patience 3 --device cuda
+
+📊 Features used in training (after preprocessing):
+  • area_number
+  • total_crimes
+  • arrest_rate
+  • count_arson
+  • count_assault
+  • count_battery
+  • count_burglary
+  • count_concealed carry license violation
+  • count_criminal damage
+  • count_criminal sexual assault
+  • count_criminal trespass
+  • count_deceptive practice
+  • count_gambling
+  • count_homicide
+  • count_human trafficking
+  • count_interference with public officer
+  • count_intimidation
+  • count_kidnapping
+  • count_liquor law violation
+  • count_motor vehicle theft
+  • count_narcotics
+  • count_non-criminal
+  • count_obscenity
+  • count_offense involving children
+  • count_other narcotic violation
+  • count_other offense
+  • count_prostitution
+  • count_public indecency
+  • count_public peace violation
+  • count_robbery
+  • count_sex offense
+  • count_stalking
+  • count_theft
+  • count_weapons violation
+  • under_25_000
+  • _25_000_to_49_999
+  • _50_000_to_74_999
+  • _75_000_to_125_000
+  • _125_000
+  • male_0_to_17
+  • male_18_to_24
+  • male_25_to_34
+  • male_35_to_49
+  • male_50_to_64
+  • male_65
+  • female_0_to_17
+  • female_18_to_24
+  • female_25_to_34
+  • female_35_to_49
+  • female_50_to_64
+  • female_65
+  • total_population
+  • white
+  • black_or_african_american
+  • american_indian_or_alaska
+  • asian
+  • native_hawaiin_or_pacific
+  • other_race
+  • multiracial
+  • white_not_hispanic_or_latino
+  • hispanic_or_latino
+  • violation_count
+  • critical_violation_flag
+  • inspection_year
+  • inspection_month
+  • inspection_dayofweek
+  • inspection_quarter
+  • is_weekend
+  • inspections_per_business
+  • fail_rate_per_business
+  • violation_score
+  • violation_level_Low
+  • violation_level_Medium
+  • violation_level_None
+  • zip_prefix
+  • risk_x_violations
+  • is_first_inspection
+  • Facility Type_Bakery
+  • Facility Type_Banquet
+  • Facility Type_Cafe
+  • Facility Type_Cafeteria
+  • Facility Type_Catering
+  • Facility Type_Children Services Facility
+  • Facility Type_Church
+  • Facility Type_Convenience Store
+  • Facility Type_Culinary School
+  • Facility Type_Daycare
+  • Facility Type_Gas Station
+  • Facility Type_Golden Diner
+  • Facility Type_Grocery Store
+  • Facility Type_Grocery Store/Gas Station
+  • Facility Type_Grocery/Restaurant
+  • Facility Type_Hospital
+  • Facility Type_Hotel
+  • Facility Type_Hybrid
+  • Facility Type_Kiosk
+  • Facility Type_Liquor
+  • Facility Type_Live Poultry
+  • Facility Type_Long Term Care
+  • Facility Type_Mobile Food Dispenser
+  • Facility Type_Mobile Food Preparer
+  • Facility Type_Mobile Frozen Desserts Vendor
+  • Facility Type_Mobile Prepared Food Vendor
+  • Facility Type_Nan
+  • Facility Type_Navy Pier Kiosk
+  • Facility Type_Pop Up Establishment
+  • Facility Type_Restaurant
+  • Facility Type_Rooftop
+  • Facility Type_School
+  • Facility Type_Shared Kitchen
+  • Facility Type_Shared Kitchen User (Long Term)
+  • Facility Type_Shelter
+  • Facility Type_Special Event Venue
+  • Facility Type_Stadium
+  • Facility Type_Tavern
+  • Facility Type_Wholesale
+  • City_Chicago
+  • City_Chicago.
+  • City_Chicagochicago
+  • City_Chicagoo
+  • City_Cicero
+  • City_Elk Grove Village
+  • City_Elmhurst
+  • City_Evanston
+  • City_Maywood
+  • City_Niles Niles
+  • City_Oak Park
+  • City_Other
+  • City_Schaumburg
+  • City_Skokie
+  • City_Unknown
+  • Risk_1
+  • Risk_2
+  • Risk_3
+  • Risk_4
+  • Zip_60608.0
+  • Zip_60611.0
+  • Zip_60614.0
+  • Zip_60616.0
+  • Zip_60618.0
+  • Zip_60622.0
+  • Zip_60623.0
+  • Zip_60625.0
+  • Zip_60632.0
+  • Zip_60639.0
+  • Zip_60640.0
+  • Zip_60647.0
+  • Zip_60654.0
+  • Zip_60657.0
+  • Zip_Other
+  • first_violation_code_10
+  • first_violation_code_11
+  • first_violation_code_12
+  • first_violation_code_13
+  • first_violation_code_14
+  • first_violation_code_15
+  • first_violation_code_16
+  • first_violation_code_17
+  • first_violation_code_18
+  • first_violation_code_19
+  • first_violation_code_2
+  • first_violation_code_20
+  • first_violation_code_21
+  • first_violation_code_22
+  • first_violation_code_23
+  • first_violation_code_24
+  • first_violation_code_25
+  • first_violation_code_26
+  • first_violation_code_27
+  • first_violation_code_28
+  • first_violation_code_29
+  • first_violation_code_3
+  • first_violation_code_30
+  • first_violation_code_31
+  • first_violation_code_32
+  • first_violation_code_33
+  • first_violation_code_34
+  • first_violation_code_35
+  • first_violation_code_36
+  • first_violation_code_37
+  • first_violation_code_38
+  • first_violation_code_39
+  • first_violation_code_4
+  • first_violation_code_40
+  • first_violation_code_41
+  • first_violation_code_42
+  • first_violation_code_43
+  • first_violation_code_44
+  • first_violation_code_45
+  • first_violation_code_46
+  • first_violation_code_47
+  • first_violation_code_48
+  • first_violation_code_49
+  • first_violation_code_5
+  • first_violation_code_50
+  • first_violation_code_51
+  • first_violation_code_52
+  • first_violation_code_53
+  • first_violation_code_54
+  • first_violation_code_55
+  • first_violation_code_56
+  • first_violation_code_57
+  • first_violation_code_58
+  • first_violation_code_59
+  • first_violation_code_6
+  • first_violation_code_60
+  • first_violation_code_61
+  • first_violation_code_62
+  • first_violation_code_63
+  • first_violation_code_64
+  • first_violation_code_7
+  • first_violation_code_70
+  • first_violation_code_8
+  • first_violation_code_9
+  • first_violation_code_Unknown
+🔢 Total features: 215
+
+
+===== LOGREG on cuda =====
+Epoch 01 | train 0.6306/0.653  val 0.5647/0.728 AUC 0.842
+Epoch 02 | train 0.5315/0.745  val 0.5054/0.755 AUC 0.872
+Epoch 03 | train 0.4882/0.763  val 0.4733/0.769 AUC 0.885
+Epoch 04 | train 0.4623/0.774  val 0.4519/0.779 AUC 0.891
+Epoch 05 | train 0.4439/0.785  val 0.4357/0.788 AUC 0.895
+Epoch 06 | train 0.4295/0.794  val 0.4228/0.799 AUC 0.898
+Epoch 07 | train 0.4178/0.802  val 0.4122/0.805 AUC 0.901
+Epoch 08 | train 0.4082/0.808  val 0.4033/0.811 AUC 0.902
+Epoch 09 | train 0.4001/0.814  val 0.3959/0.816 AUC 0.904
+Epoch 10 | train 0.3931/0.817  val 0.3893/0.818 AUC 0.905
+Epoch 11 | train 0.3873/0.820  val 0.3839/0.822 AUC 0.906
+Epoch 12 | train 0.3822/0.823  val 0.3791/0.823 AUC 0.907
+Epoch 13 | train 0.3778/0.825  val 0.3748/0.825 AUC 0.908
+Epoch 14 | train 0.3739/0.827  val 0.3714/0.827 AUC 0.909
+Epoch 15 | train 0.3706/0.827  val 0.3683/0.828 AUC 0.909
+Test  loss 0.3657 | acc 0.828 | AUC 0.911
+ROC saved → Visualizations\roc_logreg.png
+Weights saved → Weights\logreg_weights.pth
+
+===== SVM on cuda =====
+Epoch 01 | train 1.0326/0.581  val 0.7515/0.738 AUC 0.835
+Epoch 02 | train 0.6661/0.755  val 0.6072/0.767 AUC 0.878
+Epoch 03 | train 0.5789/0.776  val 0.5513/0.785 AUC 0.890
+Epoch 04 | train 0.5364/0.795  val 0.5199/0.806 AUC 0.898
+Epoch 05 | train 0.5105/0.811  val 0.4994/0.819 AUC 0.903
+Epoch 06 | train 0.4940/0.822  val 0.4867/0.826 AUC 0.906
+Epoch 07 | train 0.4833/0.827  val 0.4781/0.829 AUC 0.908
+Epoch 08 | train 0.4763/0.829  val 0.4716/0.830 AUC 0.910
+Epoch 09 | train 0.4710/0.830  val 0.4679/0.830 AUC 0.911
+Epoch 10 | train 0.4680/0.830  val 0.4661/0.831 AUC 0.911
+Epoch 11 | train 0.4655/0.831  val 0.4635/0.831 AUC 0.911
+Epoch 12 | train 0.4637/0.832  val 0.4618/0.832 AUC 0.912
+Epoch 13 | train 0.4624/0.832  val 0.4611/0.832 AUC 0.912
+Epoch 14 | train 0.4615/0.832  val 0.4602/0.832 AUC 0.912
+Epoch 15 | train 0.4610/0.832  val 0.4591/0.832 AUC 0.912
+Test  loss 0.4561 | acc 0.831 | AUC 0.913
+ROC saved → Visualizations\roc_svm.png
+Weights saved → Weights\svm_weights.pth
+
+===== MLP on cuda =====
+Epoch 01 | train 0.4980/0.746  val 0.3934/0.805 AUC 0.886
+Epoch 02 | train 0.3705/0.821  val 0.3506/0.832 AUC 0.911
+Epoch 03 | train 0.3434/0.836  val 0.3367/0.838 AUC 0.918
+Epoch 04 | train 0.3331/0.842  val 0.3322/0.839 AUC 0.920
+Epoch 05 | train 0.3279/0.844  val 0.3283/0.841 AUC 0.922
+Epoch 06 | train 0.3237/0.846  val 0.3250/0.843 AUC 0.923
+Epoch 07 | train 0.3194/0.849  val 0.3213/0.845 AUC 0.925
+Epoch 08 | train 0.3161/0.851  val 0.3184/0.847 AUC 0.927
+Epoch 09 | train 0.3129/0.853  val 0.3168/0.848 AUC 0.928
+Epoch 10 | train 0.3102/0.855  val 0.3149/0.850 AUC 0.929
+Epoch 11 | train 0.3076/0.856  val 0.3132/0.851 AUC 0.930
+Epoch 12 | train 0.3054/0.857  val 0.3123/0.852 AUC 0.930
+Epoch 13 | train 0.3036/0.858  val 0.3104/0.851 AUC 0.931
+Epoch 14 | train 0.3019/0.859  val 0.3112/0.852 AUC 0.931
+Epoch 15 | train 0.3011/0.860  val 0.3100/0.854 AUC 0.931
+Test  loss 0.3043 | acc 0.855 | AUC 0.934
+ROC saved → Visualizations\roc_mlp.png
+Weights saved → Weights\mlp_weights.pth
+
+📊 Summary saved → summary.csv
+    model  accuracy  auc_roc
+0  logreg    0.8278   0.9106
+1     svm    0.8315   0.9131
+2     mlp    0.8549   0.9337
