@@ -70,7 +70,7 @@ All models were trained with stratified 10-fold cross-validation for a 60000-row
 
 ## Model Evaluation
 
-### **Pre-Inspection Task: ** XGBoost
+### **Pre-Inspection Task:** XGBoost
 
 * **AUC-ROC**: \~0.647
 * **Accuracy**: \~69%
